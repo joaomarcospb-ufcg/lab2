@@ -2,9 +2,9 @@ package lab2;
 public class Coisa {
     public static void main(String[] args) {
         registrarDescanso();
-        //System.out.println("-----");
-        //registrarTempoOnline();
-        //System.out.println("-----");
+        System.out.println("-----");
+        registrarTempoOnline();
+        System.out.println("-----");
         //controlarDisciplina();
         //System.out.println("-----");
         //registrarResumos();
@@ -23,7 +23,7 @@ public class Coisa {
         descanso.defineNumeroSemanas(1);
         System.out.println(descanso.getStatusGeral());
     }
-/*
+
     private static void registrarTempoOnline() {
         RegistroTempoOnline tempoLP2 = new RegistroTempoOnline("LP2", 30);
         tempoLP2.adicionaTempoOnline(10);
@@ -37,7 +37,7 @@ public class Coisa {
         RegistroTempoOnline tempoP2 = new RegistroTempoOnline("P2");
         System.out.println(tempoP2.toString());
     }
-
+/*
     private static void controlarDisciplina() {
         Disciplina prog2 = new Disciplina("PROGRAMACAO 2");
         prog2.cadastraHoras(4);
