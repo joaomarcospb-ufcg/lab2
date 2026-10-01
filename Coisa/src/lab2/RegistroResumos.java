@@ -1,5 +1,7 @@
 package lab2;
 
+import java.util.*;
+
 public class RegistroResumos {
 
     private Resumo[] resumos;
@@ -30,6 +32,28 @@ public class RegistroResumos {
             saida[contador] = resumos[contador].getResumo();
         }
         return saida;
+    }
+
+    public String imprimeResumos() {
+        String saida = "- ";
+        for (int i = 0; i < totalResumos; i++) {
+            if (i == totalResumos - 1) {
+                saida += resumos[i].getTema();
+            }
+            else {
+                saida += resumos[i].getTema() + " | ";
+            }
+        }
+        return "- " + totalResumos + " resumo(s) cadastrado(s)\n" + saida;
+    }
+
+    public boolean temResumo(String tema) {
+        for (int a = 0; a < totalResumos; a++) {
+            if (resumos[a].getTema().equals(tema)) {
+                return true;
+            }
+        }
+        return false;
     }
 }
 

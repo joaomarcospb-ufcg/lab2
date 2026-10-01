@@ -10,20 +10,8 @@ public class Resumo {
         this.conteudo = conteudo;
     }
 
-    private String getTema() {
+    public String getTema() {
         return this.tema;
-    }
-
-    private String getConteudo() {
-        return this.conteudo;
-    }
-
-    private void setTema(String tema) {
-        this.tema = tema;
-    }
-
-    private void setConteudo(String conteudo) {
-        this.conteudo = conteudo;
     }
 
     public String getResumo() {
