@@ -23,7 +23,7 @@ public class Disciplina {
     }
 
     public boolean aprovado() {
-        if (mediaArray(notas) >= 7) {
+        if(mediaArray(notas) >= 7) {
             return true;
         }
         return false;

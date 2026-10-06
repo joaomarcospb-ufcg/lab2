@@ -14,8 +14,8 @@ public class RegistroResumos {
 
     public void adiciona(String tema, String conteudo) {
         resumos[contadorResumos] = new Resumo(tema, conteudo);
-        contadorResumos += 1;
-        totalResumos += 1;
+        contadorResumos++;
+        totalResumos++;
         if (contadorResumos >= resumos.length) {
             contadorResumos = 0;
             totalResumos = resumos.length;
@@ -27,11 +27,11 @@ public class RegistroResumos {
     }
 
     public String[] pegaResumos() {
-        String[] saida = new String[conta()];
-        for (int contador = 0; contador < saida.length; contador++) {
-            saida[contador] = resumos[contador].getResumo();
+        String[] temas = new String[conta()];
+        for (int contador = 0; contador < temas.length; contador++) {
+            temas[contador] = resumos[contador].getResumo();
         }
-        return saida;
+        return temas;
     }
 
     public String imprimeResumos() {
