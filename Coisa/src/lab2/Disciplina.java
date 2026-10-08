@@ -45,14 +45,6 @@ public class Disciplina {
         return false;
     }
 
-    public double mediaArray(double[] numeros) {
-        double soma = 0.0;
-        for (double num : numeros) {
-            soma += num;
-        }
-        return soma/numeros.length;
-    }
-
     public double mediaArrayPesos(double[] numeros, int[] pesos) {
         double soma = 0.0;
         double somaPesos = 0.0;
@@ -71,6 +63,6 @@ public class Disciplina {
 
     @Override
     public String toString() {
-        return this.nomeDisciplina + " " + this.horasDeEstudo + " " + mediaArray(this.notas) + " " + Arrays.toString(notas);
+        return this.nomeDisciplina + " " + this.horasDeEstudo + " " + mediaArrayPesos(this.notas, this.pesos) + " " + Arrays.toString(notas);
     }
 }
