@@ -45,7 +45,7 @@ public class Disciplina {
         return false;
     }
 
-    public double mediaArrayPesos(double[] numeros, int[] pesos) {
+    private double mediaArrayPesos(double[] numeros, int[] pesos) {
         double soma = 0.0;
         double somaPesos = 0.0;
         for (int i = 0; i < numeros.length; i++) {
