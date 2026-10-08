@@ -22,7 +22,7 @@ public class RegistroResumos {
         }
     }
 
-    public int conta(){
+    public int conta() {
         return totalResumos;
     }
 
@@ -39,8 +39,7 @@ public class RegistroResumos {
         for (int i = 0; i < totalResumos; i++) {
             if (i == totalResumos - 1) {
                 saida += resumos[i].getTema();
-            }
-            else {
+            } else {
                 saida += resumos[i].getTema() + " | ";
             }
         }
@@ -48,12 +47,31 @@ public class RegistroResumos {
     }
 
     public boolean temResumo(String tema) {
-        for (int a = 0; a < totalResumos; a++) {
-            if (resumos[a].getTema().equals(tema)) {
+        for (int i = 0; i < totalResumos; i++) {
+            if (resumos[i].getTema().equals(tema)) {
                 return true;
             }
         }
         return false;
     }
-}
 
+    public String[] busca(String chaveDeBusca) {
+        int contadorBusca = 0;
+        String temas = "";
+        String chave = chaveDeBusca.toLowerCase();
+        for (int i = 0; i < totalResumos; i++) {
+            String conteudoTemp = resumos[i].getConteudo().toLowerCase();
+            if (conteudoTemp.contains(chave)) {
+                if (contadorBusca == 0) {
+                    temas += resumos[i].getTema();
+                } else {
+                    temas += " " + resumos[i].getTema();
+                }
+                contadorBusca++;
+            }
+        }
+        String[] temasBuscados = temas.split(" ");
+        Arrays.sort(temasBuscados);
+        return temasBuscados;
+    }
+}

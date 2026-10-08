@@ -14,6 +14,10 @@ public class Resumo {
         return this.tema;
     }
 
+    public String getConteudo() {
+        return this.conteudo;
+    }
+
     public String getResumo() {
         return this.tema + ": " + this.conteudo;
     }
