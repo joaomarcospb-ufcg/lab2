@@ -13,7 +13,7 @@ public class RegistroTempoOnline {
     private String nomeDisciplina;
 
     /**
-     * Tempo online dedicado a disciplina.
+     * Tempo online dedicado à disciplina.
      */
     private int tempoOnline;
 
@@ -23,7 +23,7 @@ public class RegistroTempoOnline {
     private int tempoOnlineEsperado;
 
     /**
-     * Constrói de um registro de tempo online para uma disciplina, com o tempo padrão de 120 horas.
+     * Constrói um registro de tempo online para uma disciplina, com o tempo padrão de 120 horas.
      *
      * @param nomeDisciplina o nome da disciplina
      */
@@ -34,7 +34,7 @@ public class RegistroTempoOnline {
     }
 
     /**
-     * Construtor de um registro de tempo online para uma disciplina, onde o tempo online esperado pode ser escolhido.
+     * Constrói de um registro de tempo online para uma disciplina, onde o tempo online esperado pode ser escolhido.
      *
      * @param nomeDisciplina o nome da disciplina
      * @param tempoOnlineEsperado o tempo online esperado para a disciplina

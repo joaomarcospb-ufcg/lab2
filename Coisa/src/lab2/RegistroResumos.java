@@ -25,7 +25,7 @@ public class RegistroResumos {
     private int totalResumos = 0;
 
     /**
-     * Constrói de um registro de resumos.
+     * Constrói um registro de resumos.
      *
      * @param numeroDeResumos a quantidade de resumos máxima do registro
      */
@@ -37,7 +37,7 @@ public class RegistroResumos {
      * Adiciona um resumo ao registro de resumos.
      *
      * @param tema tema do resumo
-     * @param conteudo conteudo do resumo
+     * @param conteudo conteúdo do resumo
      */
     public void adiciona(String tema, String conteudo) {
         resumos[contadorResumos] = new Resumo(tema, conteudo);

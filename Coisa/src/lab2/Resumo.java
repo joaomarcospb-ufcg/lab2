@@ -1,7 +1,7 @@
 package lab2;
 
 /**
- * Classe para criar um resumo, com um tema e conteudo.
+ * Classe para criar um resumo, com um tema e conteúdo.
  *
  * @author João Marcos Paiva Batista
  */
@@ -13,15 +13,15 @@ public class Resumo {
     private String tema;
 
     /**
-     * Conteudo do resumo.
+     * Conteúdo do resumo.
      */
     private String conteudo;
 
     /**
-     * Construtor de um resumo.
+     * Constrói um resumo.
      *
      * @param tema tema do resumo
-     * @param conteudo conteudo do resumo
+     * @param conteudo conteúdo do resumo
      */
     public Resumo(String tema, String conteudo) {
         this.tema = tema;
@@ -29,7 +29,7 @@ public class Resumo {
     }
 
     /**
-     * Acessa o tema de um resumo
+     * Acessa o tema de um resumo.
      *
      * @return O tema do resumo.
      */
@@ -38,16 +38,16 @@ public class Resumo {
     }
 
     /**
-     * Acessa o conteudo de um resumo
+     * Acessa o conteúdo de um resumo.
      *
-     * @return O conteudo do resumo.
+     * @return O conteúdo do resumo.
      */
     public String getConteudo() {
         return this.conteudo;
     }
 
     /**
-     * Override do toString para retornar a representação desejada
+     * Override do toString para retornar a representação desejada.
      *
      * @return A representação textual de um resumo.
      */
