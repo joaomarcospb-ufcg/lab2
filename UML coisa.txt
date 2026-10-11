@@ -1,0 +1,74 @@
+Coisa
+association Descanso, Disciplina, RegistroResumos, RegistroTempoOnline
+---
+---
++ main(args: String[]): void
+---
+
+Descanso
+---
+- horasDescanso: int
+- numeroSemanas: int
+---
++ Descanso()
++ defineHorasDescanso(valor: int): void
++ defineNumeroSemanas(valor: int): void
++ getStatusGeral(): String
+---
+
+Disciplina
+---
+- nomeDisciplina: String
+- horasDeEstudo: int
+- notas: double[]
+- pesos: int[]
+---
++ Disciplina(nomeDisciplina: String)
++ Disciplina(nomeDisciplina: String, qntdNotas: int)
++ Disciplina(nomeDisciplina: String, qntdNotas: int, pesos: int[])
++ cadastraHoras(horas: int): void
++ cadastraNota(nota: int, valorNota: double): void
++ aprovado(): boolean
+- mediaArrayPesos(notas: double[], pesos: int[]): double
++ toString(): String
+---
+
+RegistroResumos
+composes Resumo
+---
+- resumos: Resumo[]
+- contadorResumos: int
+- totalResumos: int
+---
++ RegistroResumos(numeroDeResumos: int)
++ adiciona(tema: String, conteudo: String): void
++ conta(): int
++ pegaResumos(): String[]
++ imprimeResumos(): String
++ temResumo(tema: String): boolean
++ busca(chaveDeBusca: String): String[]
+---
+
+RegistroTempoOnline
+---
+- nomeDisciplina: String
+- tempoOnline: int
+- tempoOnlineEsperado: int
+---
++ RegistroTempoOnline(nomeDisciplina: String)
++ RegistroTempoOnline(nomeDisciplina: String, tempoOnlineEsperado: int)
++ adicionaTempoOnline(tempo: int): void
++ atingiuMetaTempoOnline(): boolean
++ toString(): String
+---
+
+Resumo
+---
+- tema: String
+- conteudo: String
+---
++ Resumo(tema: String, conteudo: String)
++ getTema(): String
++ getConteudo(): String
++ toString(): String
+---
